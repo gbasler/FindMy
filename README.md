@@ -37,3 +37,11 @@ The script should pick up the python bindings to provision and use that instead.
 
 This current non-Mac workflow is not optimal yet, mainly because the anisette server is a bit of a workaround. A python solution for retrieving this is being
 developed in the pypush discord, please join there if you want to contribute!
+
+For those of you having issues with NOT RECEIVING THE 2FA CODE:
+
+This finally worked for me:
+
+```bash
+python3 request_reports.py --regen --trusteddevice
+```
